@@ -1,0 +1,39 @@
+/* Controle do sistema de temas */
+
+:root {
+  color-scheme: dark light;
+}
+
+/* Comportamento suave do scrolling */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fundo do sistema de temas */
+body {
+  background: var(--md-sys-color-background);
+  font-family: "Open Sans";
+}
+
+/* Config básica de componentes */
+
+h1 {
+  padding: none;
+}
+
+a {
+  appearance: none;
+  color: var(--md-sys-color-primary);
+}
+
+/* Config básica das divs */
+
+#welcome-div {
+  padding-left: 60px;
+}
+
+#themodpack-div {
+  padding-left: 60px;
+  cursor: default;
+}

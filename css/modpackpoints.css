@@ -1,0 +1,77 @@
+/* Pontos positivos do ModPack */
+
+#pointsp {
+  font-size: 20px;
+  color: var(--md-sys-color-tertiary);
+  transition: font-size 0.3s ease;
+  cursor: default;
+  margin-bottom: -3rem;
+}
+
+#pointsp::before {
+  font-family: "Material Symbols Outlined";
+  content: "\e69b";
+}
+
+#pointsp:hover {
+  font-size: 25px;
+  color: var(--md-sys-color-tertiary);
+  margin-bottom: 0;
+}
+
+/* Outros pontos positivos do ModPack */
+
+#pointsf {
+  font-size: 20px;
+  color: var(--md-sys-color-tertiary);
+  transition: font-size 0.3s ease;
+  cursor: default;
+}
+
+#pointsf::before {
+  font-family: "Material Symbols Outlined";
+  content: "\e86c";
+  margin-right: 4px;
+}
+
+/* Imagens que aparecem ao passar o mouse dos pontos positivos do SMP */
+
+.pointphoto {
+  width: 0;
+  height: 0;
+  border-radius: 20px;
+  opacity: 0.3;
+  transition: width 0.3s ease, height 0.2s ease, opacity 0.2s ease;
+  cursor: pointer;
+}
+
+#pointsp:hover .pointphoto {
+  height: 105px;
+  width: 180px;
+  margin-top: 5px;
+}
+
+#pointsp:hover .pointphoto:active {
+  height: 210px;
+  width: 360px;
+  margin-top: 5px;
+  opacity: 1;
+}
+
+.pointsf::before {
+  content: "\e86c";
+}
+
+/* Conteúdo dos pontos positivos */
+
+.tooltip {
+  visibility: hidden;
+  font-size: 15px;
+  color: var(--md-sys-color-secondary);
+  transform: translateY(50%);
+  transition: transform 0.2s ease;
+}
+
+#pointsp:hover .tooltip {
+  visibility: visible;
+}
